@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calendario Financiero Ejemplos</title>
+    <base href="." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- generico scss -->
+    <link rel="stylesheet" href="./stylesmain.css" />
+  </head>
+
+  <body>
+    <script src="./assets/polyfill.js"></script>
+    <script src="./assets/ie11CustomProperties.js"></script>
+    <script src="./assets/webcomponents-bundle.js"></script>
+    <script src="./assets/incss.js"></script>
+    <script src="./assets/zone.min.js"></script>
+    <script src="./assets/custom-elements-es5-adapter.js"></script>
+
+    <div id="styleno">
+      <h3>Sin borde ni estilos</h3>
+      <wc-inv-calendar-month institution="1987723" style-items="{}"></wc-inv-calendar-month>
+    </div>
+
+    <hr />
+    <div id="styleitems-bak">
+      <h3>Todos los estilos con background primary</h3>
+      <wc-inv-calendar-month
+        institution="1987723"
+        style-items='{"monthName": {"background":"primary"}, "imageText":{"background":"primary"}, "notFoundLabel": {"background":"primary"}, "pdfLabel": {"background":"primary"}, "title": {"background":"primary"}, "pdfDownloadLabel": {"background":"primary"}}'
+      ></wc-inv-calendar-month>
+    </div>
+
+    <hr />
+    <div id="styleitems-font">
+      <h3>Todos los estilos con font color primary</h3>
+      <wc-inv-calendar-month
+        style-border="true"
+        institution="1987723"
+        style-items='{"monthName": {"font_color":"primary"}, "imageText":{"font_color":"primary"}, "notFoundLabel": {"font_color":"primary"}, "pdfLabel": {"font_color":"primary"}, "title": {"font_color":"primary"}, "pdfDownloadLabel": {"font_color":"primary"}}'
+      ></wc_inv-calendar-month>
+    </div>
+
+    <hr />
+    <div id="styleitems-bak-font">
+      <h3>Todos los estilos con font color y background</h3>
+      <wc-inv-calendar-month
+        institution="1987723"
+        style-items='{"monthName": {"background":"primary", "font_color": "secondary"}, "imageText":{"background":"primary", "font_color": "secondary"}, "notFoundLabel": {"background":"primary", "font_color": "secondary"}, "pdfLabel": {"background":"primary", "font_color": "secondary"}, "title": {"background":"primary", "font_color": "secondary"}, "pdfDownloadLabel": {"background":"primary", "font_color": "secondary"}}'
+      ></wc-inv-calendar-month>
+    </div>
+
+    <hr />
+    <div id="styleborder">
+      <h3>Con borde</h3>
+      <wc-inv-calendar-month institution="1987723" style-items="{}" style-border="true"></wc-inv-calendar-month>
+    </div>
+
+    <hr />
+    <div id="stylefont">
+      <h3>Con fuente</h3>
+      <wc-inv-calendar-month institution="1987723" style-items="{}" style-font="font-secondary"></wc-inv-calendar-month>
+    </div>
+
+    <div id="error-inst">
+      <h3>Error Data:</h3>
+      <wc-inv-calendar-month institution="1111111"></wc-inv-calendar-month>
+    </div>
+
+    <!-- <script type="text/javascript" src="wcinversis.js"></script>
+
+    <script type="text/javascript" src="runtime.js"></script> -->
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <!-- <script type="text/javascript" src="main-es2015.js"></script> -->
+  </body>
+</html>

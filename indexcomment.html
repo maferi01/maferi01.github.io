@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Comments Examples</title>
+    <base href="." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- variavles css -->
+    <!-- <link rel="stylesheet" href="./stylesevo.css" /> -->
+
+    <!-- generico scss -->
+    <link rel="stylesheet" href="./stylesmain.css" />
+  </head>
+
+  <body>
+    <script src="./assets/polyfill.js"></script>
+    <script src="./assets/ie11CustomProperties.js"></script>
+    <script src="./assets/webcomponents-bundle.js"></script>
+    <script src="./assets/incss.js"></script>
+    <script src="./assets/zone.min.js"></script>
+    <script src="./assets/custom-elements-es5-adapter.js"></script>
+
+    <div id="styleno">
+      <p>Styles default:</p>
+      <wc-inv-comment institution="1987723" style-items="{}"></wc-inv-comment>
+    </div>
+
+    <div id="styleitems-bak">
+      <p>Items background , font-color secondary:</p>
+      <wc-inv-comment
+        style-items='{"title":{"background":"primary"}, "date": {"background":"primary"}, "comment":{"background":"primary"}}'
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="styleitems-font">
+      <p>Items background primary, font-color secondary:</p>
+      <wc-inv-comment
+        style-items='{"title":{"background":"primary", "font_color": "secondary"}, "date": {"background":"primary", "font_color": "secondary"}, "comment":{"background":"primary", "font_color": "secondary"}}'
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="styleitems-bak-font">
+      <p>Items background secondary, font-color primary:</p>
+      <wc-inv-comment
+        style-items='{"title":{"background":"secondary", "font_color": "secondary"}, "date": {"background": "secondary", "font_color": "secondary"}, "comment": {"background": "secondary", "font_color": "primary"}}'
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="styleborder">
+      <p>Componete con borde:</p>
+      <wc-inv-comment
+        style-border="true"
+        style-items='{"title":{"background":"secondary"}, "date": {"background": "secondary", "font_color": "secondary"}, "comment": {"background": "secondary"}}'
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="stylenoborder">
+      <p>Componete sin borde:</p>
+      <wc-inv-comment
+        style-border="false"
+        style-items='{"title":{"background":"primary"}, "date": {"background": "primary"}, "comment": {"background": "primary"}}'
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="stylebutton">
+      <p>Botón con estilos:</p>
+      <wc-inv-comment
+        style-border="false"
+        style-items='{"title":{"background":"secondary"}, "comment": {"background": "secondary"}}'
+        style-button="button-secondary"
+        institution="1987723"
+      ></wc-inv-comment>
+    </div>
+
+    <div id="stylefont">
+      <p>Cambio de tipografía:</p>
+      <wc-inv-comment
+        style-border="false"
+        style-items='{"title":{"background":"secondary"}, "comment": {"background": "secondary"}}'
+        institution="1987723"
+        style-font="font-primary"
+      ></wc-inv-comment>
+    </div>
+
+
+    <div id="error-inst">
+      <h3>Error Data:</h3>
+      <wc-inv-comment institution="1111111"></<wc-inv-comment>
+    </div>
+    <!-- <script type="text/javascript" src="wcinversis.js"></script>
+
+    <script type="text/javascript" src="runtime.js"></script> -->
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <!-- <script type="text/javascript" src="main-es2015.js"></script> -->
+  </body>
+</html>
