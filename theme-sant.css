@@ -1,0 +1,213 @@
+:root {
+  --mobile-bp: 1024px;
+  --sl-color-primary: #004ab7;
+  --sl-color-secondary: #001658;
+  --sl-color-tertiary: #004ab7;
+  --sl-color-quaternary: #a4a4a4;
+  --sl-color-btn-secondary: #ffdd43;
+  --sl-color-btn-secondary-hover: #ddbf38;
+  --sl-color-white: #ffffff;
+  --sl-color-error: #ff0000;
+  --sl-color-warning: #ffad00;
+  --sl-color-info: var(--sl-color-secondary);
+  --sl-color-success: var(--sl-color-primary);
+  --sl-bgcolor: #fcfcfc;
+  --sl-bgcolor-input: #fbfbfb;
+  --sl-bgcolor-button: #0082ff;
+  --sl-bgcolor-page: #fafafa;
+}
+
+.form-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-checkbox .custom-control-label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #001658;
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border: solid 1px var(--sl-bgcolor-button);
+  border-radius: 0;
+  background-color: white;
+}
+
+.icon-rotate {
+  transform: rotate(180deg) !important;
+}
+
+.custom-select {
+  background-image: url("http://localhost:8081/assets/icons/sl-icon-arrow-down-blue.svg");
+  background-size: 30px;
+  padding-right: 40px;
+  background-position-x: 100%;
+}
+
+input,
+textarea {
+  background-color: var(--sl-bgcolor-input);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--sl-color-secondary);
+  border: none;
+}
+
+button {
+  height: 50px;
+}
+
+@media (min-width: 1300px) {
+  html .container {
+    max-width: 1240px;
+  }
+}
+
+.sl-page-title {
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--sl-color-secondary);
+  padding: 20px 0;
+}
+
+.sl-form-subtitle {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--sl-color-secondary);
+  font-weight: 600;
+}
+
+.sl-input-rounded-icon {
+  position: relative;
+}
+
+.sl-input-rounded-icon input {
+  border-radius: 30px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.13);
+  background-color: #ffffff;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6a7494;
+  height: 50px;
+  padding: 0 60px 0 26px;
+  position: relative;
+}
+
+.sl-input-rounded-icon .sl-input-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 15px;
+  right: 15px;
+}
+
+.sl-custom-form input,
+.sl-custom-form textarea,
+.sl-custom-form select {
+  background-color: var(--sl-bgcolor-input);
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  font-weight: 600;
+}
+
+.sl-custom-form input:-moz-placeholder-shown, .sl-custom-form textarea:-moz-placeholder-shown {
+  font-weight: 100;
+}
+
+.sl-custom-form input:placeholder-shown,
+.sl-custom-form textarea:placeholder-shown,
+.sl-custom-form .select-placeholder {
+  font-weight: 100;
+}
+
+.sl-modal-bottom .animate-bottom {
+  position: relative;
+  -webkit-animation: animatebottom 0.4s;
+          animation: animatebottom 0.4s;
+  border-radius: 0;
+  border: none;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.sl-modal-bottom .modal-dialog {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.sl-modal-bottom .modal-header {
+  border-bottom: solid 0.3px var(--sl-color-secondary);
+}
+
+.sl-modal-bottom .modal-header .close {
+  opacity: 1;
+}
+
+.sl-modal-bottom .modal-header .close:focus {
+  border: none;
+  outline: none;
+}
+
+.sl-modal-bottom .modal-footer {
+  border-top: none;
+}
+
+.sl-bg-light-dark {
+  background-color: var(--sl-bgcolor-page);
+}
+
+/*# sourceMappingURL=theme-sant.css.map*/
